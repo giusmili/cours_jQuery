@@ -1,15 +1,21 @@
 $(document).ready((e)=>{ /* function main */
     e.preventDefault;
-    let title_text = $("title");
-    let title_event = $("section h2")
-    title_text.text("Event jQuery")
-    $("header h1").hide();
+    /* event btn */
+    $(".header-btn-warning").on("mousedown",function(e){
+        //console.log(e.target)
+       $(this).next().delay(500).slideToggle();
+        //console.log("dessus");
+        $(".cible").text("je suis sur le bouton");
+        $(this).toggleClass("header-btn-warning-titre");
+        $(".head-title").addClass("speed-title");
+        $(".notice").animate({
+                            'width' : '400',
+                            'opacity' : 'toggle'
+                        });
 
-    title_event.on('mousedown',(e)=>{
-        console.log(e.target)
-        $(title_event).css({'cursor':'pointer'})
-        $("header h1").slideToggle(400)
-    })
+    });
+    /* comportement des gestionnaire */
+
 
     
-})
+});
