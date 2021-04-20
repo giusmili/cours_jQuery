@@ -50,6 +50,8 @@ $(document).ready((e)=>{ /* function main */
         console.log(` ${user[i].nom} : ${user[i].date}`)
     }
     console.table(user)
+    /* new event */
+    
 
 
     
