@@ -11,11 +11,11 @@ $(document).ready((e)=>{ /* function main */
     let main_title = $('h1');
     let main = $('main');
     //console.log(el.text())
-    main_title.text(title)
-    main_title.append(` ${version} `) /* append prepend */
+    main_title.text(title);
+    main_title.append(` ${version} `); /* append prepend */
    
-   console.log(main.children().children().next())
-    main.children().children().next().css({'color':'#333','font-style':'italic'}).text(content)
+   console.log(main.children().children().next());
+    main.children().children().next().css({'color':'#333','font-style':'italic'}).text(content);
    
 
     /* création d'un lien dynamique */
@@ -38,7 +38,7 @@ $(document).ready((e)=>{ /* function main */
     $("img").attr({
             'src':'./asset/jquery_plain_wordmark_logo_icon_146445.png',
             'alt' : 'jQuery logo'
-    })
+    });
     $("figure figcaption h2").wrapInner("<em></em>"); /* envelopper les éléments */
 
     /* choisir l'élément par l'index */
@@ -76,7 +76,7 @@ $(document).ready((e)=>{ /* function main */
     //stop propagation js
     $('section p, header h1').on('click',(e)=>{
         e.stopPropagation();
-    })
+    });
 
 
 

@@ -108,3 +108,14 @@ main hr{
     background-color: #ccc;
     margin: 5rem auto 
 }
+section ul li{
+    line-height: 3rem;
+    padding: .5rem;
+    background-color: #222;
+    color: #fff;
+    margin-bottom: .1rem;
+    text-transform: capitalize;
+}
+main p{
+    line-height: 2.6rem;
+}
