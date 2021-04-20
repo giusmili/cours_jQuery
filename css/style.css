@@ -111,7 +111,7 @@ main hr{
 section ul li{
     line-height: 3rem;
     padding: .5rem;
-    background-color: #222;
+    background-color: rgb(97, 90, 90);
     color: #fff;
     margin-bottom: .1rem;
     text-transform: capitalize;
