@@ -3,7 +3,7 @@ $(document).ready((e)=>{ /* function main */
     /* event btn */
     $(".header-btn-warning").on("mousedown",function(e){
         //console.log(e.target)
-       $(this).next().delay(500).slideToggle();
+       $(this).next().delay(800).slideToggle();
         //console.log("dessus");
         $(".cible").text("je suis sur le bouton");
         $(this).toggleClass("header-btn-warning-titre");
@@ -39,6 +39,7 @@ $(document).ready((e)=>{ /* function main */
     console.log(bigparent.children())
     console.log(bigparent.children("header").children().parent())
 
+    //test objet
     let user = $({
             nom : "jQuery",
             date : 2006

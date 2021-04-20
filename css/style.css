@@ -133,11 +133,11 @@ main p{
     padding: .5rem;
 }
 .header-btn-warning::before{
-    content: ' + ';
+    content: ' - ';
 
 }
 .header-btn-warning-titre::before{
-    content: ' - ';
+    content: ' + ';
 }
 
 .header-btn-warning-titre{
