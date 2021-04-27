@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Roboto', sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,p,figure,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+button{
+    padding: 0;
+    font-size: inherit;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+/* scroll personnalisé */
+*{
+    /* firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(26, 8, 90) #fff;
+}
+/* pour chrome */
+*::-webkit-scrollbar{
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #000;
+    outline: 0.1rem solid #fff;
+}
+
+/* theme */
+
+header{
+    background-color: #222;
+}
+header h1{
+    line-height: 6.5rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    
+}
+header h1::before{
+    content:'\f005';
+    font-family: 'FontAwesome';
+    margin-right: 1.0rem;
+    color: #ffc107;
+}
+.container-main-menu{
+    width: 60.0rem;
+    margin: 5rem auto 0;
+    background-color: #fafafa;
+}
+.container-main-menu h2{
+    font-weight: normal;
+    line-height: 3.0rem;
+    background-color: #2196f3;
+    padding: 1rem;
+    color: #fff;
+    text-shadow: .1rem .1rem 0 #222;
+    margin-bottom: .1rem;
+    cursor: pointer;
+}
+.container-main-menu ul{
+    line-height: 3.5rem;
+}
+.container-main-menu ul li:last-child{
+    border: 0;
+}
+.container-main-menu ul li{
+    background-color: #bbdefb;
+    margin-bottom: .1rem;
+}
+.container-main-menu ul li a{
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    transition: all 500ms ease-in-out;
+    padding: 1rem;
+}
+.container-main-menu ul li:hover a{
+    background-color: #e3f2fd;
+}
+/* icons */
+.container-main-menu .anchor::before, 
+.container-main-menu .sign::before, 
+.container-main-menu .cog::before{
+    font-family: "FontAwesome";
+    margin-right: 1rem;
+
+}
+.container-main-menu .anchor::before{
+    content:'\f13d';
+}
+.container-main-menu .sign::before{
+    content:'\f277';
+}
+.container-main-menu .cog::before{
+    content:'\f013';
+}
+.container-main-menu .navigation{
+    display: none;
+}
+
+footer{
+    padding: 1rem;
+    text-align: center;
+    color: rgb(100, 97, 97);
+    font-size: small;
+}
+/* media queris responsive */
+@media screen and (max-width: 60.0rem){
+    .container-main-menu{
+        margin: .1rem;
+        width: auto;
+        
+    }
+    header h1{
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+        padding: 1rem;
+    }
+    .container-main-menu h2{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (orientation:landscape){
+    .container-main-menu{
+        margin: .1rem;
+        width: auto;
+        
+        
+    }
+    .container-main-menu h2{
+        font-size: 1.8rem;
+    }
+    
+}
+
+/* version desk */
+@media screen and (min-width: 60.0rem){
+    .container-main-menu{
+        margin: 1rem auto;
+        width: 60.0rem;
+        
+        
+    }
+    .container-main-menu h2{
+        font-size: 2.4rem;
+    }
+    
+}
+
+
