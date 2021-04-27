@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Roboto', sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,p,figure,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+button{
+    padding: 0;
+    font-size: inherit;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+/* scroll personnalisé */
+*{
+    /* firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(26, 8, 90) #fff;
+}
+/* pour chrome */
+*::-webkit-scrollbar{
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #000;
+    outline: 0.1rem solid #fff;
+}
+
+/* theme */
+header{
+    background-color: #222;
+    cursor: pointer;
+}
+
+header h1{
+    line-height: 6.5rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    
+}
+header h1::before{
+    content:'\f005';
+    font-family: 'FontAwesome';
+    margin-right: 1.0rem;
+    color: #ffc107;
+}
+section{
+    max-width: 40rem;
+    margin: 5rem auto 1rem;
+}
+section h2{
+    line-height: 4.5rem;
+    text-align: center;
+    background: #fafafa;
+    font-weight: 300;
+}
+section ul li ul *, ul > li{
+    background: url(../asset/file.png)no-repeat left top;
+    padding: 2.1rem 0 1.0rem 5.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.folder-open{
+    background: url(../asset/open.png)no-repeat left top;
+    padding-left: 7rem;
+}
+
+section ul li ul li ul{ /* option pour la 3ème liste */
+    padding: 0;
+    list-style: none;
+    transition: all 200ms ease-in-out;
+    
+}
+footer{
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: small;
+    color: rgb(83, 82, 82);
+}
