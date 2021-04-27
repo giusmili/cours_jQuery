@@ -42,10 +42,11 @@ button{
 }
 
 /* theme */
-
 header{
     background-color: #222;
+    cursor: pointer;
 }
+
 header h1{
     line-height: 6.5rem;
     text-align: center;
@@ -73,6 +74,11 @@ header h1::before{
     text-shadow: .1rem .1rem 0 #222;
     margin-bottom: .1rem;
     cursor: pointer;
+}
+/* classe pour h2 */
+.container-main-menu .bg-color, .bg-header-add{
+    background-color: rgb(5, 54, 110);
+    
 }
 .container-main-menu ul{
     line-height: 3.5rem;
@@ -113,6 +119,9 @@ header h1::before{
 }
 .container-main-menu .navigation{
     display: none;
+}
+.container-main-menu .navigation:first-child{
+    display: block;
 }
 
 footer{
